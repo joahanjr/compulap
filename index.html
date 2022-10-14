@@ -6,31 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compulap</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./html2pdf.bundle.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <p class="name-pag">Compulap</p>
+            <p class="name-pag"><i>Compulap</i></p>
             <p class="reception"> Hoja de recepción:</p>
         </div>
     </header>
+
     <main>
-        <img class="background-img" src="./logo.jpg" alt="logo de la empresa">
+    <section class="body">
         <section class="top-tiket">
             <div class="left"> 
-                <label for="direction">Dirección:</label>
+                <p class="direction">Dirección:</p> 
                 <br>
-                <input name="direction" type="text" value="3 Poniente Norte 210-A, Teran Tuxtla Gutierrez, Chiapas, 29050" size="46">
+                <p class="localitation">3 Poniente Norte 210-A, Teran Tuxtla Gutierrez, Chiapas, 29050</p>
             </div>
             <div class="right">
-                <label for="">Fecha</label>
-                <input type="date">
+                <label class="label" for="date">Fecha</label>
+                <input class="option" id="date" name="date" type="date">
                 <br>
-                <label for="">Hora</label>
-                <input type="time">
+                <label class="label" for="time">Hora</label>
+                <input class="option" id="time" name="time" type="time">
             </div>   
         </section>
+
+        <section class="img-back">
+            <form action="">
+                <h2>Recibo equipo de computo.</h2>
+                <label  class="client-name" for="client-name">A nombre de:</label>
+                <br>
+                <input type="text" name="client-name" id="client-name" placeholder="nombre del cliente">
+                <br><br><br>
+                <label class="contact" for="contact">Medio de contacto</label>
+                <br>
+                <input type="text" name="contact" id="contact" placeholder="Medios de contacto">  
+                <br><br><br>
+                <label class="type-lap" for="lap">Tipo de dispositivo</label>
+                <br>
+                <input type="text" id="lap" placeholder="Tipo de dispositivo">
+                <br><br><br>
+                <label class="desciption-problem" for="problem">Describe el problema:</label>
+                <br>
+                <input type="text" name="problem" id="problem" placeholder="¿Cual es el problema del dispositivo?" size="30">
+                <br><br><br>
+                <label class="accesorios" for="accesori">Accesorios</label>
+                <br>
+                <input type="text" name="accesori" id="accesori" placeholder="¿Que accesorios tenia?" size="30">
+            </form>
+            <br><br><br><br><br><br>
+            <button class="convertir">Convertir a PDF</button>
+        </section>
+    </section>
     </main>
-    
+
+    <footer>
+        <p class="desc">DESPUES DE 15 DIAS NATURALES DE LA NOTIFICACION AL MEDIO DE CONTACTO SE GENERARA UN COSTO DIFERENTE</p>
+        <div>
+            <a href="https://www.facebook.com/CompulapTuxtla"><img class="facebook" src="./icons/Facebook.svg.webp" alt="Logo facebook"></a>
+            <a href="https://goo.gl/maps/BA1kKirNSuVMUDtp6"><img class="maps" src="./icons/maps.png" alt="Logo maps"></a>
+            <a href="#"><p class="gmail">compulap.08@gmail.com</p></a>
+            <a href="https://wa.me/+5219612654065?text=Hola%20buenas%20tardes,"><img class="whatsApp" src="./icons/whatsapp.png" alt="Logo whatsApp"></a>
+        </div>
+    </footer>
 </body>
 </html>
