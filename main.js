@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .finally()
             .then(() => {
                 console.log("guardado")
+                button.classList.remove("inactive");
             })
     })
 })
