@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(() => {
                 console.log("guardado")
                 button.classList.remove("inactive");
+                const myform = document.querySelector(".myform").reset();
             })
     })
-})
+});

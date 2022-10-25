@@ -146,6 +146,7 @@ footer .redes{
     font-size: 1.4rem;
     justify-content: center;
     align-content: center;
+    text-align: right;
 }
 .whatsApp{
     width: 50px;
